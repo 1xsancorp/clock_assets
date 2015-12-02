@@ -1,75 +1,3025 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
     <title>Clock assets by 1xsancorp</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Clock assets</h1>
+      <h2 class="project-tagline">JavaScript/jQuery Countdown Clock Builder</h2>
+      <a href="https://github.com/1xsancorp/clock_assets" class="btn">View on GitHub</a>
+      <a href="https://github.com/1xsancorp/clock_assets/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/1xsancorp/clock_assets/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-      <header>
-        <h1>Clock assets</h1>
-        <p>JavaScript/jQuery Countdown Clock Builder</p>
-      </header>
+    <section class="main-content">
+      <p>`/* Get the bourbon mixin from <a href="http://bourbon.io">http://bourbon.io</a> <em>/
+/</em> Reset */
+.flip-clock-wrapper * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}</p>
 
-      <div id="banner">
-        <span id="logo"></span>
+<p>.flip-clock-wrapper a {
+  cursor: pointer;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  color: #ccc; }</p>
 
-        <a href="https://github.com/1xsancorp/clock_assets" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/1xsancorp/clock_assets/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/1xsancorp/clock_assets/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
+<p>.flip-clock-wrapper a:hover {
+  color: #fff; }</p>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<p>.flip-clock-wrapper ul {
+  list-style: none; }</p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+<p>.flip-clock-wrapper.clearfix:before,
+.flip-clock-wrapper.clearfix:after {
+  content: " ";
+  display: table; }</p>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p>.flip-clock-wrapper.clearfix:after {
+  clear: both; }</p>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+<p>.flip-clock-wrapper.clearfix {
+  *zoom: 1; }</p>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
+<p>/* Main */
+.flip-clock-wrapper {
+  font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-user-select: none; }</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>.flip-clock-wrapper .flip-clock-meridium {
+  background: none !important;
+  box-shadow: 0 0 0 !important;
+  font-size: 36px !important; }</p>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p>.flip-clock-wrapper .flip-clock-meridium a { color: #313333; }</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>.flip-clock-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 1em;
+}</p>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<p>.flip-clock-wrapper:before,
+.flip-clock-wrapper:after {
+    content: " "; /* 1 <em>/
+    display: table; /</em> 2 */
+}
+.flip-clock-wrapper:after {
+    clear: both;
+}</p>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/1xsancorp">1xsancorp</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+<p>/* Skeleton */
+.flip-clock-wrapper ul {
+  position: relative;
+  float: left;
+  margin: 5px;
+  width: 60px;
+  height: 90px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 87px;
+  border-radius: 6px;
+  background: #000;
+}</p>
+
+<p>.flip-clock-wrapper ul li {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none !important;
+  margin-left: 0;
+}</p>
+
+<p>.flip-clock-wrapper ul li:first-child {
+  z-index: 2; }</p>
+
+<p>.flip-clock-wrapper ul li a {
+  display: block;
+  height: 100%;
+  -webkit-perspective: 200px;
+  -moz-perspective: 200px;
+  perspective: 200px;
+  margin: 0 !important;
+  overflow: visible !important;
+  cursor: default !important; }</p>
+
+<p>.flip-clock-wrapper ul li a div {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  font-size: 80px;
+  overflow: hidden; }</p>
+
+<p>.flip-clock-wrapper ul li a div .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }</p>
+
+<p>.flip-clock-wrapper ul li a div.up {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  top: 0; }</p>
+
+<p>.flip-clock-wrapper ul li a div.up:after {
+  content: "";
+  position: absolute;
+  top: 44px;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4); }</p>
+
+<p>.flip-clock-wrapper ul li a div.down {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  bottom: 0; }</p>
+
+<p>.flip-clock-wrapper ul li a div div.inn {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 200%;
+  color: #ccc;
+  text-shadow: 0 1px 2px #000;
+  text-align: center;
+  background-color: #333;
+  border-radius: 6px;
+  font-size: 70px; }</p>
+
+<p>.flip-clock-wrapper ul li a div.up div.inn {
+  top: 0; }</p>
+
+<p>.flip-clock-wrapper ul li a div.down div.inn {
+  bottom: 0; }</p>
+
+<p>/* PLAY */
+.flip-clock-wrapper ul.play li.flip-clock-before {
+  z-index: 3; }</p>
+
+<p>.flip-clock-wrapper .flip {   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); }</p>
+
+<p>.flip-clock-wrapper ul.play li.flip-clock-active {
+  -webkit-animation: asd 0.5s 0.5s linear both;
+  -moz-animation: asd 0.5s 0.5s linear both;
+  animation: asd 0.5s 0.5s linear both;
+  z-index: 5; }</p>
+
+<p>.flip-clock-divider {
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 100px; }</p>
+
+<p>.flip-clock-divider:first-child {
+  width: 0; }</p>
+
+<p>.flip-clock-dot {
+  display: block;
+  background: #323434;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  left: 5px; }</p>
+
+<p>.flip-clock-divider .flip-clock-label {
+  position: absolute;
+  top: -1.5em;
+  right: -86px;
+  color: black;
+  text-shadow: none; }</p>
+
+<p>.flip-clock-divider.minutes .flip-clock-label {
+  right: -88px; }</p>
+
+<p>.flip-clock-divider.seconds .flip-clock-label {
+  right: -91px; }</p>
+
+<p>.flip-clock-dot.top {
+  top: 30px; }</p>
+
+<p>.flip-clock-dot.bottom {
+  bottom: 30px; }</p>
+
+<p>@-webkit-keyframes asd {
+  0% {
+    z-index: 2; }</p>
+
+<p>20% {
+    z-index: 4; }</p>
+
+<p>100% {
+    z-index: 4; } }</p>
+
+<p>@-moz-keyframes asd {
+  0% {
+    z-index: 2; }</p>
+
+<p>20% {
+    z-index: 4; }</p>
+
+<p>100% {
+    z-index: 4; } }</p>
+
+<p>@-o-keyframes asd {
+  0% {
+    z-index: 2; }</p>
+
+<p>20% {
+    z-index: 4; }</p>
+
+<p>100% {
+    z-index: 4; } }</p>
+
+<p><a href="https://github.com/keyframes" class="user-mention">@keyframes</a> asd {
+  0% {
+    z-index: 2; }</p>
+
+<p>20% {
+    z-index: 4; }</p>
+
+<p>100% {
+    z-index: 4; } }</p>
+
+<p>.flip-clock-wrapper ul.play li.flip-clock-active .down {
+  z-index: 2;
+  -webkit-animation: turn 0.5s 0.5s linear both;
+  -moz-animation: turn 0.5s 0.5s linear both;
+  animation: turn 0.5s 0.5s linear both; }</p>
+
+<p>@-webkit-keyframes turn {
+  0% {
+    -webkit-transform: rotateX(90deg); }</p>
+
+<p>100% {
+    -webkit-transform: rotateX(0deg); } }</p>
+
+<p>@-moz-keyframes turn {
+  0% {
+    -moz-transform: rotateX(90deg); }</p>
+
+<p>100% {
+    -moz-transform: rotateX(0deg); } }</p>
+
+<p>@-o-keyframes turn {
+  0% {
+    -o-transform: rotateX(90deg); }</p>
+
+<p>100% {
+    -o-transform: rotateX(0deg); } }</p>
+
+<p><a href="https://github.com/keyframes" class="user-mention">@keyframes</a> turn {
+  0% {
+    transform: rotateX(90deg); }</p>
+
+<p>100% {
+    transform: rotateX(0deg); } }</p>
+
+<p>.flip-clock-wrapper ul.play li.flip-clock-before .up {
+  z-index: 2;
+  -webkit-animation: turn2 0.5s linear both;
+  -moz-animation: turn2 0.5s linear both;
+  animation: turn2 0.5s linear both; }</p>
+
+<p>@-webkit-keyframes turn2 {
+  0% {
+    -webkit-transform: rotateX(0deg); }</p>
+
+<p>100% {
+    -webkit-transform: rotateX(-90deg); } }</p>
+
+<p>@-moz-keyframes turn2 {
+  0% {
+    -moz-transform: rotateX(0deg); }</p>
+
+<p>100% {
+    -moz-transform: rotateX(-90deg); } }</p>
+
+<p>@-o-keyframes turn2 {
+  0% {
+    -o-transform: rotateX(0deg); }</p>
+
+<p>100% {
+    -o-transform: rotateX(-90deg); } }</p>
+
+<p><a href="https://github.com/keyframes" class="user-mention">@keyframes</a> turn2 {
+  0% {
+    transform: rotateX(0deg); }</p>
+
+<p>100% {
+    transform: rotateX(-90deg); } }</p>
+
+<p>.flip-clock-wrapper ul li.flip-clock-active {
+  z-index: 3; }</p>
+
+<p>/* SHADOW */
+.flip-clock-wrapper ul.play li.flip-clock-before .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: show 0.5s linear both;
+  -moz-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }</p>
+
+<p>.flip-clock-wrapper ul.play li.flip-clock-active .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  -moz-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.3s linear both; }</p>
+
+<p>/<em>DOWN</em>/
+.flip-clock-wrapper ul.play li.flip-clock-before .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: show 0.5s linear both;
+  -moz-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }</p>
+
+<p>.flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  -moz-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.2s linear both; }</p>
+
+<p>@-webkit-keyframes show {
+  0% {
+    opacity: 0; }</p>
+
+<p>100% {
+    opacity: 1; } }</p>
+
+<p>@-moz-keyframes show {
+  0% {
+    opacity: 0; }</p>
+
+<p>100% {
+    opacity: 1; } }</p>
+
+<p>@-o-keyframes show {
+  0% {
+    opacity: 0; }</p>
+
+<p>100% {
+    opacity: 1; } }</p>
+
+<p><a href="https://github.com/keyframes" class="user-mention">@keyframes</a> show {
+  0% {
+    opacity: 0; }</p>
+
+<p>100% {
+    opacity: 1; } }</p>
+
+<p>@-webkit-keyframes hide {
+  0% {
+    opacity: 1; }</p>
+
+<p>100% {
+    opacity: 0; } }</p>
+
+<p>@-moz-keyframes hide {
+  0% {
+    opacity: 1; }</p>
+
+<p>100% {
+    opacity: 0; } }</p>
+
+<p>@-o-keyframes hide {
+  0% {
+    opacity: 1; }</p>
+
+<p>100% {
+    opacity: 0; } }</p>
+
+<p><a href="https://github.com/keyframes" class="user-mention">@keyframes</a> hide {
+  0% {
+    opacity: 1; }</p>
+
+<p>100% {
+    opacity: 0; } }</p>
+
+<p>/* --- SMALL CLOCK CSS --- */</p>
+
+<p>/* Reset */
+.flip-clock-small-wrapper * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}</p>
+
+<p>.flip-clock-small-wrapper a {
+  cursor: pointer;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  color: #ccc; }</p>
+
+<p>.flip-clock-small-wrapper a:hover {
+  color: #fff; }</p>
+
+<p>.flip-clock-small-wrapper ul {
+  list-style: none; }</p>
+
+<p>.flip-clock-small-wrapper.clearfix:before,
+.flip-clock-small-wrapper.clearfix:after {
+  content: " ";
+  display: table; }</p>
+
+<p>.flip-clock-small-wrapper.clearfix:after {
+  clear: both; }</p>
+
+<p>.flip-clock-small-wrapper.clearfix {
+  *zoom: 1; }</p>
+
+<p>/* Main */
+.flip-clock-small-wrapper {
+  font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-user-select: none; }</p>
+
+<p>.flip-clock-small-wrapper .flip-clock-meridium {
+  background: none !important;
+  box-shadow: 0 0 0 !important;
+  font-size: 18px !important; }</p>
+
+<p>.flip-clock-small-wrapper .flip-clock-meridium a { color: #313333; }</p>
+
+<p>.flip-clock-small-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 1em;
+}</p>
+
+<p>.flip-clock-small-wrapper:before,
+.flip-clock-small-wrapper:after {
+    content: " "; /* 1 <em>/
+    display: table; /</em> 2 */
+}
+.flip-clock-small-wrapper:after {
+    clear: both;
+}</p>
+
+<p>/* Skeleton */
+.flip-clock-small-wrapper ul {
+  position: relative;
+  float: left;
+  margin: 2px;
+  width: 30px;
+  padding: 0;
+  height: 38px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 37px;
+  border-radius: 6px;
+  background: #000;
+}</p>
+
+<p>.flip-clock-small-wrapper ul li {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none !important;
+  margin-left: 0;
+}</p>
+
+<p>.flip-clock-small-wrapper ul li:first-child {
+  z-index: 2; }</p>
+
+<p>.flip-clock-small-wrapper ul li a {
+  display: block;
+  height: 100%;
+  -webkit-perspective: 200px;
+  -moz-perspective: 200px;
+  perspective: 200px;
+  margin: 0 !important;
+  overflow: visible !important;
+  cursor: default !important; }</p>
+
+<p>.flip-clock-small-wrapper ul li a div {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  font-size: 80px;
+  overflow: hidden; }</p>
+
+<p>.flip-clock-small-wrapper ul li a div .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }</p>
+
+<p>.flip-clock-small-wrapper ul li a div.up {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  top: 0; }</p>
+
+<p>.flip-clock-small-wrapper ul li a div.up:after {
+  content: "";
+  position: absolute;
+  top: 44px;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4); }</p>
+
+<p>.flip-clock-small-wrapper ul li a div.down {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  bottom: 0; }</p>
+
+<p>.flip-clock-small-wrapper ul li a div div.inn {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 200%;
+  color: #ccc;
+  text-shadow: 0 1px 2px #000;
+  text-align: center;
+  background-color: #333;
+  border-radius: 6px;
+  font-size: 20px; }</p>
+
+<p>.flip-clock-small-wrapper ul li a div.up div.inn {
+  top: 0; }</p>
+
+<p>.flip-clock-small-wrapper ul li a div.down div.inn {
+  bottom: 0; }</p>
+
+<p>/* PLAY */
+.flip-clock-small-wrapper ul.play li.flip-clock-before {
+  z-index: 3; }</p>
+
+<p>.flip-clock-small-wrapper .flip {   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); }</p>
+
+<p>.flip-clock-small-wrapper ul.play li.flip-clock-active {
+  -webkit-animation: asd 0.5s 0.5s linear both;
+  -moz-animation: asd 0.5s 0.5s linear both;
+  animation: asd 0.5s 0.5s linear both;
+  z-index: 5; }</p>
+
+<p>.flip-clock-small-wrapper .flip-clock-divider {
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 40px; }</p>
+
+<p>.flip-clock-small-wrapper .flip-clock-divider:first-child {
+  width: 0; }</p>
+
+<p>.flip-clock-small-wrapper .flip-clock-dot {
+  display: block;
+  background: #323434;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  left: 5px; }</p>
+
+<p>.flip-clock-small-wrapper .flip-clock-divider .flip-clock-label {
+  position: absolute;
+  top: -1.1em;
+  right: -48px;
+  color: black;
+  text-shadow: none; }</p>
+
+<p>.flip-clock-small-wrapper .flip-clock-divider.minutes .flip-clock-label {
+  right: -54px; }</p>
+
+<p>.flip-clock-small-wrapper .flip-clock-divider.seconds .flip-clock-label {
+  right: -56px; }</p>
+
+<p>.flip-clock-small-wrapper .flip-clock-dot.top {
+  top: 10px; }</p>
+
+<p>.flip-clock-small-wrapper .flip-clock-dot.bottom {
+  bottom: 6px; }</p>
+
+<p>.flip-clock-small-wrapper ul.play li.flip-clock-active .down {
+  z-index: 2;
+  -webkit-animation: turn 0.5s 0.5s linear both;
+  -moz-animation: turn 0.5s 0.5s linear both;
+  animation: turn 0.5s 0.5s linear both; }</p>
+
+<p>.flip-clock-small-wrapper ul.play li.flip-clock-before .up {
+  z-index: 2;
+  -webkit-animation: turn2 0.5s linear both;
+  -moz-animation: turn2 0.5s linear both;
+  animation: turn2 0.5s linear both; }</p>
+
+<p>.flip-clock-small-wrapper ul li.flip-clock-active {
+  z-index: 3; }</p>
+
+<p>/* SHADOW */
+.flip-clock-small-wrapper ul.play li.flip-clock-before .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: show 0.5s linear both;
+  -moz-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }</p>
+
+<p>.flip-clock-small-wrapper ul.play li.flip-clock-active .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  -moz-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.3s linear both; }</p>
+
+<p>/<em>DOWN</em>/
+.flip-clock-small-wrapper ul.play li.flip-clock-before .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: show 0.5s linear both;
+  -moz-animation: show 0.5s linear both;
+  animation: show 0.5s linear both; }</p>
+
+<p>.flip-clock-small-wrapper ul.play li.flip-clock-active .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear, top, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear, to bottom, black 0%, rgba(0, 0, 0, 0.1) 100%;
+  -webkit-animation: hide 0.5s 0.3s linear both;
+  -moz-animation: hide 0.5s 0.3s linear both;
+  animation: hide 0.5s 0.2s linear both; }</p>
+
+<p><code>
+</code>/*
+    Base.js, version 1.1a
+    Copyright 2006-2010, Dean Edwards
+    License: <a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a>
+*/</p>
+
+<p>var Base = function() {
+    // dummy
+};</p>
+
+<p>Base.extend = function(_instance, _static) { // subclass</p>
+
+<pre><code>"use strict";
+
+var extend = Base.prototype.extend;
+
+// build the prototype
+Base._prototyping = true;
+var proto = new this();
+extend.call(proto, _instance);
+</code></pre>
+
+<p>proto.base = function() {
+    // call this method from any other method to invoke that method's ancestor
+  };
+    delete Base._prototyping;</p>
+
+<pre><code>// create the wrapper for the constructor function
+//var constructor = proto.constructor.valueOf(); //-dean
+var constructor = proto.constructor;
+var klass = proto.constructor = function() {
+    if (!Base._prototyping) {
+        if (this._constructing || this.constructor == klass) { // instantiation
+            this._constructing = true;
+            constructor.apply(this, arguments);
+            delete this._constructing;
+        } else if (arguments[0] !== null) { // casting
+            return (arguments[0].extend || extend).call(arguments[0], proto);
+        }
+    }
+};
+
+// build the class interface
+klass.ancestor = this;
+klass.extend = this.extend;
+klass.forEach = this.forEach;
+klass.implement = this.implement;
+klass.prototype = proto;
+klass.toString = this.toString;
+klass.valueOf = function(type) {
+    //return (type == "object") ? klass : constructor; //-dean
+    return (type == "object") ? klass : constructor.valueOf();
+};
+extend.call(klass, _static);
+// class initialisation
+if (typeof klass.init == "function") klass.init();
+return klass;
+</code></pre>
+
+<p>};</p>
+
+<p>Base.prototype = {<br>
+    extend: function(source, value) {
+        if (arguments.length &gt; 1) { // extending with a name/value pair
+            var ancestor = this[source];
+            if (ancestor &amp;&amp; (typeof value == "function") &amp;&amp; // overriding a method?
+                // the valueOf() comparison is to avoid circular references
+                (!ancestor.valueOf || ancestor.valueOf() != value.valueOf()) &amp;&amp;
+                /\bbase\b/.test(value)) {
+                // get the underlying method
+                var method = value.valueOf();
+                // override
+                value = function() {
+                    var previous = this.base || Base.prototype.base;
+                    this.base = ancestor;
+                    var returnValue = method.apply(this, arguments);
+                    this.base = previous;
+                    return returnValue;
+                };
+                // point to the underlying method
+                value.valueOf = function(type) {
+                    return (type == "object") ? value : method;
+                };
+                value.toString = Base.toString;
+            }
+            this[source] = value;
+        } else if (source) { // extending with an object literal
+            var extend = Base.prototype.extend;
+            // if this object has a customised extend method then use it
+            if (!Base._prototyping &amp;&amp; typeof this != "function") {
+                extend = this.extend || extend;
+            }
+            var proto = {toSource: null};
+            // do the "toString" and other methods manually
+            var hidden = ["constructor", "toString", "valueOf"];
+            // if we are prototyping then include the constructor
+            var i = Base._prototyping ? 0 : 1;
+            while (key = hidden[i++]) {
+                if (source[key] != proto[key]) {
+                    extend.call(this, key, source[key]);</p>
+
+<pre><code>            }
+        }
+        // copy each of the source object's properties to this object
+        for (var key in source) {
+            if (!proto[key]) extend.call(this, key, source[key]);
+        }
+    }
+    return this;
+}
+</code></pre>
+
+<p>};</p>
+
+<p>// initialise
+Base = Base.extend({
+    constructor: function() {
+        this.extend(arguments[0]);
+    }
+}, {
+    ancestor: Object,
+    version: "1.1",</p>
+
+<pre><code>forEach: function(object, block, context) {
+    for (var key in object) {
+        if (this.prototype[key] === undefined) {
+            block.call(context, object[key], key, object);
+        }
+    }
+},
+
+implement: function() {
+    for (var i = 0; i &lt; arguments.length; i++) {
+        if (typeof arguments[i] == "function") {
+            // if it's a function, call it
+            arguments[i](this.prototype);
+        } else {
+            // add the interface using the extend method
+            this.prototype.extend(arguments[i]);
+        }
+    }
+    return this;
+},
+
+toString: function() {
+    return String(this.valueOf());
+}
+</code></pre>
+
+<p>});
+/*jshint smarttabs:true */</p>
+
+<p>var FlipClock;</p>
+
+<p>/**</p>
+
+<ul>
+<li>FlipClock.js
+*</li>
+<li>
+<a href="https://github.com/author" class="user-mention">@author</a>     Justin Kimbrell</li>
+<li>
+<a href="https://github.com/copyright" class="user-mention">@copyright</a>  2013 - Objective HTML, LLC</li>
+<li>@licesnse   <a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a>
+*/</li>
+</ul>
+
+<p>(function($) {</p>
+
+<pre><code>"use strict";
+
+/**
+ * FlipFlock Helper
+ *
+ * @param  object  A jQuery object or CSS select
+ * @param  int     An integer used to start the clock (no. seconds)
+ * @param  object  An object of properties to override the default  
+ */
+
+FlipClock = function(obj, digit, options) {
+    return new FlipClock.Factory(obj, digit, options);
+};
+
+/**
+ * The global FlipClock.Lang object
+ */
+
+FlipClock.Lang = {};
+
+/**
+ * The Base FlipClock class is used to extend all other FlipFlock
+ * classes. It handles the callbacks and the basic setters/getters
+ *  
+ * @param   object  An object of the default properties
+ * @param   object  An object of properties to override the default 
+ */
+
+FlipClock.Base = Base.extend({
+
+    /**
+     * Build Date
+     */
+
+    buildDate: '2013-11-07',
+
+    /**
+     * Version
+     */
+
+    version: '0.3.1',
+
+    /**
+     * Sets the default options
+     *
+     * @param   object  The default options
+     * @param   object  The override options
+     */
+
+    constructor: function(_default, options) {
+        if(typeof _default !== "object") {
+            _default = {};
+        }
+        if(typeof options !== "object") {
+            options = {};
+        }
+        this.setOptions($.extend(true, {}, _default, options));
+    },
+
+    /**
+     * Delegates the callback to the defined method
+     *
+     * @param   object  The default options
+     * @param   object  The override options
+     */
+
+    callback: function(method) {
+        if(typeof method === "function") {
+            var args = [];
+
+            for(var x = 1; x &lt;= arguments.length; x++) {
+                if(arguments[x]) {
+                    args.push(arguments[x]);
+                }
+            }
+
+            method.apply(this, args);
+        }
+    },
+
+    /**
+     * Log a string into the console if it exists
+     *
+     * @param   string  The name of the option
+     * @return  mixed
+     */     
+
+    log: function(str) {
+        if(window.console &amp;&amp; console.log) {
+            console.log(str);
+        }
+    },
+
+    /**
+     * Get an single option value. Returns false if option does not exist
+     *
+     * @param   string  The name of the option
+     * @return  mixed
+     */     
+
+    getOption: function(index) {
+        if(this[index]) {
+            return this[index];
+        }
+        return false;
+    },
+
+    /**
+     * Get all options
+     *
+     * @return  bool
+     */     
+
+    getOptions: function() {
+        return this;
+    },
+
+    /**
+     * Set a single option value
+     *
+     * @param   string  The name of the option
+     * @param   mixed   The value of the option
+     */     
+
+    setOption: function(index, value) {
+        this[index] = value;
+    },
+
+    /**
+     * Set a multiple options by passing a JSON object
+     *
+     * @param   object  The object with the options
+     * @param   mixed   The value of the option
+     */     
+
+    setOptions: function(options) {
+        for(var key in options) {
+            if(typeof options[key] !== "undefined") {
+                this.setOption(key, options[key]);
+            }
+        }
+    }
+
+});
+
+/**
+ * The FlipClock Factory class is used to build the clock and manage
+ * all the public methods.
+ *
+ * @param   object  A jQuery object or CSS selector used to fetch
+                    the wrapping DOM nodes
+ * @param   mixed   This is the digit used to set the clock. If an 
+                    object is passed, 0 will be used.   
+ * @param   object  An object of properties to override the default 
+ */
+
+FlipClock.Factory = FlipClock.Base.extend({
+
+    /**
+     * Auto start the clock on page load (True|False)
+     */ 
+
+    autoStart: true,
+
+    /**
+     * The callback methods
+     */     
+
+    callbacks: {
+        destroy: false,
+        create: false,
+        init: false,
+        interval: false,
+        start: false,
+        stop: false,
+        reset: false
+    },
+
+    /**
+     * The CSS classes
+     */     
+
+    classes: {
+        active: 'flip-clock-active',
+        before: 'flip-clock-before',
+        divider: 'flip-clock-divider',
+        dot: 'flip-clock-dot',
+        label: 'flip-clock-label',
+        flip: 'flip',
+        play: 'play',
+        wrapper: 'flip-clock-wrapper'
+    },
+
+    /**
+     * The name of the clock face class in use
+     */ 
+
+    clockFace: 'HourlyCounter',
+
+    /**
+     * The name of the default clock face class to use if the defined
+     * clockFace variable is not a valid FlipClock.Face object
+     */ 
+
+    defaultClockFace: 'HourlyCounter',
+
+    /**
+     * The default language
+     */ 
+
+    defaultLanguage: 'english',
+
+    /**
+     * The language being used to display labels (string)
+     */ 
+
+    language: 'english',
+
+    /**
+     * The language object after it has been loaded
+     */ 
+
+    lang: false,
+
+    /**
+     * The FlipClock.Face object
+     */ 
+
+    face: true,
+
+    /**
+     * Is the clock running? (True|False)
+     */     
+
+    running: false,
+
+    /**
+     * The FlipClock.Time object
+     */     
+
+    time: false,
+
+    /**
+     * The FlipClock.Timer object
+     */     
+
+    timer: false,
+
+    /**
+     * An array of FlipClock.List objects
+     */     
+
+    lists: [],
+
+    /**
+     * The wrapping jQuery object
+     */     
+
+    $wrapper: false,
+
+    /**
+     * Constructor
+     *
+     * @param   object  The wrapping jQuery object
+     * @param   object  Number of seconds used to start the clock
+     * @param   object  An object override options
+     */
+
+    constructor: function(obj, digit, options) {
+
+        this.lists    = [];
+        this.running  = false;
+        this.base(options);     
+        this.$wrapper = $(obj).addClass(this.classes.wrapper);
+        this.time     = new FlipClock.Time(this, digit ? Math.round(digit) : 0);
+        this.timer    = new FlipClock.Timer(this, options);
+
+        this.lang     = this.loadLanguage(this.language);
+        this.face     = this.loadClockFace(this.clockFace, options);
+
+        if(this.autoStart) {
+            this.start();
+        }
+    },
+
+    /**
+     * Load the FlipClock.Face object
+     *
+     * @param   object  The name of the FlickClock.Face class
+     * @param   object  An object override options
+     */
+
+    loadClockFace: function(name, options) {    
+        var face, suffix = 'Face';
+
+        name = name.ucfirst()+suffix;
+
+        if(FlipClock[name]) {
+            face = new FlipClock[name](this, options);
+        }
+        else {
+            face = new FlipClock[this.defaultClockFace+suffix](this, options);
+        }
+
+        face.build();
+
+        return face;
+    },
+
+
+    /**
+     * Load the FlipClock.Lang object
+     *
+     * @param   object  The name of the language to load
+     */
+
+    loadLanguage: function(name) {  
+        var lang;
+
+        if(FlipClock.Lang[name.ucfirst()]) {
+            lang = FlipClock.Lang[name.ucfirst()];
+        }
+        else if(FlipClock.Lang[name]) {
+            lang = FlipClock.Lang[name];
+        }
+        else {
+            lang = FlipClock.Lang[this.defaultLanguage];
+        }
+
+        return lang;
+    },
+
+    /**
+     * Localize strings into various languages
+     *
+     * @param   string  The index of the localized string
+     * @param   object  Optionally pass a lang object
+     */
+
+    localize: function(index, obj) {
+        var lang = this.lang;
+
+        if(!index) {
+            return null;
+        }
+
+        var lindex = index.toLowerCase();
+
+        if(typeof obj == "object") {
+            lang = obj;
+        }
+
+        if(lang &amp;&amp; lang[lindex]) {
+            return lang[lindex];
+        }
+
+        return index;
+    },
+
+
+    /**
+     * Starts the clock
+     */
+
+    start: function(callback) {
+        var t = this;
+
+        if(!t.running &amp;&amp; (!t.countdown || t.countdown &amp;&amp; t.time.time &gt; 0)) {
+            t.face.start(t.time);
+            t.timer.start(function() {
+                t.flip();
+
+                if(typeof callback === "function") {
+                    callback();
+                }   
+            });
+        }
+        else {
+            t.log('Trying to start timer when countdown already at 0');
+        }
+    },
+
+    /**
+     * Stops the clock
+     */
+
+    stop: function(callback) {
+        this.face.stop();
+        this.timer.stop(callback);
+
+        for(var x in this.lists) {
+            this.lists[x].stop();
+        }   
+    },
+
+    /**
+     * Reset the clock
+     */
+
+    reset: function(callback) {
+        this.timer.reset(callback);
+        this.face.reset();
+    },
+
+    /**
+     * Sets the clock time
+     */
+
+    setTime: function(time) {
+        this.time.time = time;
+        this.face.setTime(time);        
+    },
+
+    /**
+     * Get the clock time
+     *
+     * @return  object  Returns a FlipClock.Time object
+     */
+
+    getTime: function(time) {
+        return this.time;       
+    },
+
+    /**
+     * Changes the increment of time to up or down (add/sub)
+     */
+
+    setCountdown: function(value) {
+        var running = this.running;
+
+        this.countdown = value ? true : false;
+
+        if(running) {
+            this.stop();
+            this.start();
+        }
+    },
+
+    /**
+     * Flip the digits on the clock
+     *
+     * @param  array  An array of digits     
+     */
+    flip: function() {
+        this.face.flip();
+    }
+
+});
+
+/**
+ * The FlipClock Face class is the base class in which to extend
+ * all other FlockClock.Face classes.
+ *
+ * @param   object  The parent FlipClock.Factory object
+ * @param   object  An object of properties to override the default 
+ */
+
+FlipClock.Face = FlipClock.Base.extend({
+
+    /**
+     * An array of jQuery objects used for the dividers (the colons)
+     */
+
+    dividers: [],
+
+    /**
+     * An array of FlipClock.List objects
+     */     
+
+    factory: false,
+
+    /**
+     * An array of FlipClock.List objects
+     */     
+
+    lists: [],
+
+    /**
+     * Constructor
+     *
+     * @param   object  The parent FlipClock.Factory object
+     * @param   object  An object of properties to override the default 
+     */
+
+    constructor: function(factory, options) {
+        this.base(options);
+        this.factory  = factory;
+        this.dividers = [];
+    },
+
+    /**
+     * Build the clock face
+     */
+
+    build: function() {},
+
+    /**
+     * Creates a jQuery object used for the digit divider
+     *
+     * @param   mixed   The divider label text
+     * @param   mixed   Set true to exclude the dots in the divider. 
+     *                  If not set, is false.
+     */
+
+    createDivider: function(label, css, excludeDots) {
+
+        if(typeof css == "boolean" || !css) {
+            excludeDots = css;
+            css = label;
+        }
+
+        var dots = [
+            '&lt;span class="'+this.factory.classes.dot+' top"&gt;&lt;/span&gt;',
+            '&lt;span class="'+this.factory.classes.dot+' bottom"&gt;&lt;/span&gt;'
+        ].join('');
+
+        if(excludeDots) {
+            dots = '';  
+        }
+
+        label = this.factory.localize(label);
+
+        var html = [
+            '&lt;span class="'+this.factory.classes.divider+' '+(css ? css : '').toLowerCase()+'"&gt;',
+                '&lt;span class="'+this.factory.classes.label+'"&gt;'+(label ? label : '')+'&lt;/span&gt;',
+                dots,
+            '&lt;/span&gt;'
+        ];  
+
+        return $(html.join(''));
+    },
+
+    /**
+     * Creates a FlipClock.List object and appends it to the DOM
+     *
+     * @param   mixed   The digit to select in the list
+     * @param   object  An object to override the default properties
+     */
+
+    createList: function(digit, options) {
+        if(typeof digit === "object") {
+            options = digit;
+            digit = 0;
+        }
+
+        var obj = new FlipClock.List(this.factory, digit, options);
+
+        //this.factory.$wrapper.append(obj.$obj);   
+
+        return obj;
+    },
+
+    /**
+     * Triggers when the clock is reset
+     */
+
+    reset: function() {},
+
+    /**
+     * Sets the clock time
+     */
+
+    setTime: function(time) {
+        this.flip(time);        
+    },
+
+    /**
+     * Sets the clock time
+     */
+
+    addDigit: function(digit) {
+        var obj = this.createList(digit, {
+            classes: {
+                active: this.factory.classes.active,
+                before: this.factory.classes.before,
+                flip: this.factory.classes.flip
+            }
+        });
+
+        obj.$obj.insertBefore(this.factory.lists[0].$obj);
+
+        this.factory.lists.unshift(obj);
+    },
+
+    /**
+     * Triggers when the clock is started
+     */
+
+    start: function() {},
+
+    /**
+     * Triggers when the time on the clock stops
+     */
+
+    stop: function() {},
+
+    /**
+     * Triggers when the numbers on the clock flip
+     */
+
+    flip: function(time, doNotAddPlayClass) {
+        var t = this;
+
+        if(!doNotAddPlayClass) {
+            if(!t.factory.countdown) {
+                t.factory.time.time++;
+            }
+            else {
+                if(t.factory.time.time &lt;= 0) {
+                    t.factory.stop();
+                }
+
+                t.factory.time.time--;  
+            }
+        }
+
+        var offset = t.factory.lists.length - time.length;
+
+        if(offset &lt; 0) {
+            offset = 0;
+        }           
+
+        var totalNew = 0;
+        var reFlip = false;
+
+        $.each(time, function(i, digit) {
+            i += offset;
+
+            var list = t.factory.lists[i];
+
+            if(list) {
+                var currentDigit = list.digit;
+
+                list.select(digit);
+
+                if(digit != currentDigit &amp;&amp; !doNotAddPlayClass) {
+                    list.play();    
+                }
+            }   
+            else {
+                t.addDigit(digit);
+                reFlip = true;
+            }
+        });
+
+        for(var x = 0; x &lt; time.length; x++) {
+            if(x &gt;= offset &amp;&amp; t.factory.lists[x].digit != time[x]) {
+                t.factory.lists[x].select(time[x]);
+            }
+        }
+    }
+
+});
+
+/**
+ * The FlipClock List class is used to build the list used to create 
+ * the card flip effect. This object fascilates selecting the correct
+ * node by passing a specific digit.
+ *
+ * @param   object  A FlipClock.Factory object
+ * @param   mixed   This is the digit used to set the clock. If an 
+ *                  object is passed, 0 will be used.   
+ * @param   object  An object of properties to override the default 
+ */
+
+FlipClock.List = FlipClock.Base.extend({
+
+    /**
+     * The digit (0-9)
+     */     
+
+    digit: 0,
+
+    /**
+     * The CSS classes
+     */     
+
+    classes: {
+        active: 'flip-clock-active',
+        before: 'flip-clock-before',
+        flip: 'flip'    
+    },
+
+    /**
+     * The parent FlipClock.Factory object
+     */     
+
+    factory: false,
+
+    /**
+     * The wrapping jQuery object
+     */     
+
+    $obj: false,
+
+    /**
+     * The items in the list
+     */     
+
+    items: [],
+
+    /**
+     * Constructor
+     *
+     * @param  object  A FlipClock.Factory object
+     * @param  int     An integer use to select the correct digit
+     * @param  object  An object to override the default properties  
+     */
+
+    constructor: function(factory, digit, options) {
+        this.factory = factory;
+        this.digit   = digit;
+        this.$obj    = this.createList();
+
+        if(digit &gt; 0) {
+            this.select(digit);
+        }
+
+        this.factory.$wrapper.append(this.$obj);
+    },
+
+    /**
+     * Select the digit in the list
+     *
+     * @param  int  A digit 0-9  
+     */
+
+    select: function(digit) {
+        if(typeof digit === "undefined") {
+            digit = this.digit;
+        }
+        else {
+            this.digit = digit;
+        }
+
+        var target = this.$obj.find('[data-digit="'+digit+'"]');
+        var active = this.$obj.find('.'+this.classes.active).removeClass(this.classes.active);
+        var before = this.$obj.find('.'+this.classes.before).removeClass(this.classes.before);
+
+        if(!this.factory.countdown) {
+            if(target.is(':first-child')) {
+                this.$obj.find(':last-child').addClass(this.classes.before);
+            }
+            else {
+                target.prev().addClass(this.classes.before);
+            }
+        }
+        else {
+            if(target.is(':last-child')) {
+                this.$obj.find(':first-child').addClass(this.classes.before);
+            }
+            else {
+                target.next().addClass(this.classes.before);
+            }
+        }
+
+        target.addClass(this.classes.active);           
+    },
+
+    /**
+     * Adds the play class to the DOM object
+     */
+
+    play: function() {
+        this.$obj.addClass(this.factory.classes.play);
+    },
+
+    /**
+     * Removes the play class to the DOM object 
+     */
+
+    stop: function() {
+        var t = this;
+
+        setTimeout(function() {
+            t.$obj.removeClass(t.factory.classes.play);
+        }, this.factory.timer.interval);
+    },
+
+    /**
+     * Create the list of digits and appends it to the DOM object 
+     */
+
+    createList: function() {
+
+        var html = $('&lt;ul class="'+this.classes.flip+' '+(this.factory.running ? this.factory.classes.play : '')+'" /&gt;');
+
+        for(var x = 0; x &lt; 10; x++) {
+            var item = $([
+            '&lt;li data-digit="'+x+'"&gt;',
+                '&lt;a href="#"&gt;',
+                    '&lt;div class="up"&gt;',
+                        '&lt;div class="shadow"&gt;&lt;/div&gt;',
+                        '&lt;div class="inn"&gt;'+x+'&lt;/div&gt;',
+                    '&lt;/div&gt;',
+                    '&lt;div class="down"&gt;',
+                        '&lt;div class="shadow"&gt;&lt;/div&gt;',
+                        '&lt;div class="inn"&gt;'+x+'&lt;/div&gt;',
+                    '&lt;/div&gt;',
+                '&lt;/a&gt;',
+            '&lt;/li&gt;'].join(''));
+
+            this.items.push(item);
+
+            html.append(item);
+        }
+
+        return html;
+    }
+});
+
+/**
+ * The FlipClock Time class is used to manage all the time 
+ * calculations.
+ *
+ * @param   object  A FlipClock.Factory object
+ * @param   mixed   This is the digit used to set the clock. If an 
+ *                  object is passed, 0 will be used.   
+ * @param   object  An object of properties to override the default 
+ */
+
+FlipClock.Time = FlipClock.Base.extend({
+
+    /**
+     * The time (in seconds)
+     */     
+
+    minimumDigits: 0,
+
+    /**
+     * The time (in seconds)
+     */     
+
+    time: 0,
+
+    /**
+     * The parent FlipClock.Factory object
+     */     
+
+    factory: false,
+
+    /**
+     * Constructor
+     *
+     * @param  object  A FlipClock.Factory object
+     * @param  int     An integer use to select the correct digit
+     * @param  object  An object to override the default properties  
+     */
+
+    constructor: function(factory, time, options) {
+        this.base(options);
+        this.factory = factory;
+
+        if(time) {
+            this.time = time;
+        }
+    },
+
+    /**
+     * Convert a string or integer to an array of digits
+     *
+     * @param   mixed  String or Integer of digits   
+     * @return  array  An array of digits 
+     */
+
+    convertDigitsToArray: function(str) {
+        var data = [];
+
+        str = str.toString();
+
+        for(var x = 0;x &lt; str.length; x++) {
+            if(str[x].match(/^\d*$/g)) {
+                data.push(str[x]);  
+            }
+        }
+
+        return data;
+    },
+
+    /**
+     * Get a specific digit from the time integer
+     *
+     * @param   int    The specific digit to select from the time    
+     * @return  mixed  Returns FALSE if no digit is found, otherwise
+     *                 the method returns the defined digit  
+     */
+
+    digit: function(i) {
+        var timeStr = this.toString();
+        var length  = timeStr.length;
+
+        if(timeStr[length - i])  {
+            return timeStr[length - i];
+        }
+
+        return false;
+    },
+
+    /**
+     * Formats any array of digits into a valid array of digits
+     *
+     * @param   mixed  An array of digits    
+     * @return  array  An array of digits 
+     */
+
+    digitize: function(obj) {
+        var data = [];
+
+        $.each(obj, function(i, value) {
+            value = value.toString();
+
+            if(value.length == 1) {
+                value = '0'+value;
+            }
+
+            for(var x = 0; x &lt; value.length; x++) {
+                data.push(value[x]);
+            }               
+        });
+
+        if(data.length &gt; this.minimumDigits) {
+            this.minimumDigits = data.length;
+        }
+
+        if(this.minimumDigits &gt; data.length) {
+            data.unshift('0');
+        }
+
+        return data;
+    },
+
+    /**
+     * Gets a daily breakdown
+     *
+     * @return  object  Returns a digitized object
+     */
+
+    getDayCounter: function(includeSeconds) {
+        var digits = [
+            this.getDays(),
+            this.getHours(true),
+            this.getMinutes(true)
+        ];
+
+        if(includeSeconds) {
+            digits.push(this.getSeconds(true));
+        }
+
+        return this.digitize(digits);
+    },
+
+    /**
+     * Gets number of days
+     *
+     * @param   bool  Should perform a modulus? If not sent, then no.
+     * @return  int   Retuns a floored integer
+     */
+
+    getDays: function(mod) {
+        var days = this.time / 60 / 60 / 24;
+
+        if(mod) {
+            days = days % 7;
+        }
+
+        return Math.floor(days);
+    },
+
+    /**
+     * Gets an hourly breakdown
+     *
+     * @return  object  Returns a digitized object
+     */
+
+    getHourCounter: function() {
+        var obj = this.digitize([
+            this.getHours(),
+            this.getMinutes(true),
+            this.getSeconds(true)
+        ]);
+
+        return obj;
+    },
+
+    /**
+     * Gets an hourly breakdown
+     *
+     * @return  object  Returns a digitized object
+     */
+
+    getHourly: function() {
+        return this.getHourCounter();
+    },
+
+    /**
+     * Gets number of hours
+     *
+     * @param   bool  Should perform a modulus? If not sent, then no.
+     * @return  int   Retuns a floored integer
+     */
+
+    getHours: function(mod) {
+        var hours = this.time / 60 / 60;
+
+        if(mod) {
+            hours = hours % 24; 
+        }
+
+        return Math.floor(hours);
+    },
+
+    /**
+     * Gets the twenty-four hour time
+     *
+     * @return  object  returns a digitized object
+     */
+
+    getMilitaryTime: function() {
+        var date = new Date(); 
+        var obj  = this.digitize([
+            date.getHours(),
+            date.getMinutes(),
+            date.getSeconds()               
+        ]);
+
+        return obj;
+    },
+
+    /**
+     * Gets number of minutes
+     *
+     * @param   bool  Should perform a modulus? If not sent, then no.
+     * @return  int   Retuns a floored integer
+     */
+
+    getMinutes: function(mod) {
+        var minutes = this.time / 60;
+
+        if(mod) {
+            minutes = minutes % 60;
+        }
+
+        return Math.floor(minutes);
+    },
+
+    /**
+     * Gets a minute breakdown
+     */
+
+    getMinuteCounter: function() {
+        var obj = this.digitize([
+            this.getMinutes(),
+            this.getSeconds(true)
+        ]);
+
+        return obj;
+    },
+
+    /**
+     * Gets number of seconds
+     *
+     * @param   bool  Should perform a modulus? If not sent, then no.
+     * @return  int   Retuns a ceiled integer
+     */
+
+    getSeconds: function(mod) {
+        var seconds = this.time;
+
+        if(mod) {
+            if(seconds == 60) {
+                seconds = 0;
+            }
+            else {
+                seconds = seconds % 60;
+            }
+        }
+
+        return Math.ceil(seconds);
+    },
+
+    /**
+     * Gets the current twelve hour time
+     *
+     * @return  object  Returns a digitized object
+     */
+
+    getTime: function() {
+        var date  = new Date(); 
+        var hours = date.getHours();
+        var merid = hours &gt; 12 ? 'PM' : 'AM';
+        var obj   = this.digitize([
+            hours &gt; 12 ? hours - 12 : (hours === 0 ? 12 : hours),
+            date.getMinutes(),
+            date.getSeconds()               
+        ]);
+
+        return obj;
+    },
+
+    /**
+     * Gets number of weeks
+     *
+     * @param   bool  Should perform a modulus? If not sent, then no.
+     * @return  int   Retuns a floored integer
+     */
+
+    getWeeks: function() {
+        var weeks = this.time / 60 / 60 / 24 / 7;
+
+        if(mod) {
+            weeks = weeks % 52;
+        }
+
+        return Math.floor(weeks);
+    },
+
+    /**
+     * Removes a specific number of leading zeros from the array.
+     * This method prevents you from removing too many digits, even
+     * if you try.
+     *
+     * @param   int    Total number of digits to remove 
+     * @return  array  An array of digits 
+     */
+
+    removeLeadingZeros: function(totalDigits, digits) {
+        var total    = 0;
+        var newArray = [];
+
+        $.each(digits, function(i, digit) {
+            if(i &lt; totalDigits) {
+                total += parseInt(digits[i], 10);
+            }
+            else {
+                newArray.push(digits[i]);
+            }
+        });
+
+        if(total === 0) {
+            return newArray;
+        }
+
+        return digits;
+    },
+
+    /**
+     * Converts the object to a human readable string
+     */
+
+    toString: function() {
+        return this.time.toString();
+    }
+
+    /*
+    getYears: function() {
+        return Math.floor(this.time / 60 / 60 / 24 / 7 / 52);
+    },
+
+    getDecades: function() {
+        return Math.floor(this.getWeeks() / 10);
+    }*/
+});
+
+/**
+ * The FlipClock.Timer object managers the JS timers
+ *
+ * @param   object  The parent FlipClock.Factory object
+ * @param   object  Override the default options
+ */
+
+FlipClock.Timer = FlipClock.Base.extend({
+
+    /**
+     * Callbacks
+     */     
+
+    callbacks: {
+        destroy: false,
+        create: false,
+        init: false,
+        interval: false,
+        start: false,
+        stop: false,
+        reset: false
+    },
+
+    /**
+     * FlipClock timer count (how many intervals have passed)
+     */     
+
+    count: 0,
+
+    /**
+     * The parent FlipClock.Factory object
+     */     
+
+    factory: false,
+
+    /**
+     * Timer interval (1 second by default)
+     */     
+
+    interval: 1000,
+
+    /**
+     * Constructor
+     *
+     * @return  void
+     */     
+
+    constructor: function(factory, options) {
+        this.base(options);
+        this.factory = factory;
+        this.callback(this.callbacks.init); 
+        this.callback(this.callbacks.create);
+    },
+
+    /**
+     * This method gets the elapsed the time as an interger
+     *
+     * @return  void
+     */     
+
+    getElapsed: function() {
+        return this.count * this.interval;
+    },
+
+    /**
+     * This method gets the elapsed the time as a Date object
+     *
+     * @return  void
+     */     
+
+    getElapsedTime: function() {
+        return new Date(this.time + this.getElapsed());
+    },
+
+    /**
+     * This method is resets the timer
+     *
+     * @param   callback  This method resets the timer back to 0
+     * @return  void
+     */     
+
+    reset: function(callback) {
+        clearInterval(this.timer);
+        this.count = 0;
+        this._setInterval(callback);            
+        this.callback(this.callbacks.reset);
+    },
+
+    /**
+     * This method is starts the timer
+     *
+     * @param   callback  A function that is called once the timer is destroyed
+     * @return  void
+     */     
+
+    start: function(callback) {     
+        this.factory.running = true;
+        this._createTimer(callback);
+        this.callback(this.callbacks.start);
+    },
+
+    /**
+     * This method is stops the timer
+     *
+     * @param   callback  A function that is called once the timer is destroyed
+     * @return  void
+     */     
+
+    stop: function(callback) {
+        this.factory.running = false;
+        this._clearInterval(callback);
+        this.callback(this.callbacks.stop);
+        this.callback(callback);
+    },
+
+    /**
+     * Clear the timer interval
+     *
+     * @return  void
+     */     
+
+    _clearInterval: function() {
+        clearInterval(this.timer);
+    },
+
+    /**
+     * Create the timer object
+     *
+     * @param   callback  A function that is called once the timer is created
+     * @return  void
+     */     
+
+    _createTimer: function(callback) {
+        this._setInterval(callback);        
+    },
+
+    /**
+     * Destroy the timer object
+     *
+     * @param   callback  A function that is called once the timer is destroyed
+     * @return  void
+     */     
+
+    _destroyTimer: function(callback) {
+        this._clearInterval();          
+        this.timer = false;
+        this.callback(callback);
+        this.callback(this.callbacks.destroy);
+    },
+
+    /**
+     * This method is called each time the timer interval is ran
+     *
+     * @param   callback  A function that is called once the timer is destroyed
+     * @return  void
+     */     
+
+    _interval: function(callback) {
+        this.callback(this.callbacks.interval);
+        this.callback(callback);
+        this.count++;
+    },
+
+    /**
+     * This sets the timer interval
+     *
+     * @param   callback  A function that is called once the timer is destroyed
+     * @return  void
+     */     
+
+    _setInterval: function(callback) {
+        var t = this;
+
+        t.timer = setInterval(function() {          
+            t._interval(callback);
+        }, this.interval);
+    }
+
+});
+
+/**
+ * Capitalize the first letter in a string
+ *
+ * @return string
+ */
+
+String.prototype.ucfirst = function() {
+    return this.substr(0, 1).toUpperCase() + this.substr(1);
+};
+
+/**
+ * jQuery helper method
+ *
+ * @param  int     An integer used to start the clock (no. seconds)
+ * @param  object  An object of properties to override the default  
+ */
+
+$.fn.FlipClock = function(digit, options) {
+    if(typeof digit == "object") {
+        options = digit;
+        digit = 0;
+    }       
+    return new FlipClock($(this), digit, options);
+};
+
+/**
+ * jQuery helper method
+ *
+ * @param  int     An integer used to start the clock (no. seconds)
+ * @param  object  An object of properties to override the default  
+ */
+
+$.fn.flipClock = function(digit, options) {
+    return $.fn.FlipClock(digit, options);
+};
+</code></pre>
+
+<p>}(jQuery));</p>
+
+<p>(function($) {</p>
+
+<pre><code>/**
+ * Twenty-Four Hour Clock Face
+ *
+ * This class will generate a twenty-four our clock for FlipClock.js
+ *
+ * @param  object  The parent FlipClock.Factory object
+ * @param  object  An object of properties to override the default  
+ */
+
+FlipClock.TwentyFourHourClockFace = FlipClock.Face.extend({
+
+    /**
+     * Constructor
+     *
+     * @param  object  The parent FlipClock.Factory object
+     * @param  object  An object of properties to override the default  
+     */
+
+    constructor: function(factory, options) {
+        factory.countdown = false;
+        this.base(factory, options);
+    },
+
+    /**
+     * Build the clock face
+     *
+     * @param  object  Pass the time that should be used to display on the clock.   
+     */
+
+    build: function(time) {
+        var t        = this;
+        var children = this.factory.$wrapper.find('ul');
+
+        time = time ? time : (this.factory.time.time || this.factory.time.getMilitaryTime());
+
+        if(time.length &gt; children.length) {
+            $.each(time, function(i, digit) {
+                t.factory.lists.push(t.createList(digit));
+            });
+        }
+
+        this.dividers.push(this.createDivider());
+        this.dividers.push(this.createDivider());
+
+        $(this.dividers[0]).insertBefore(this.factory.lists[this.factory.lists.length - 2].$obj);
+        $(this.dividers[1]).insertBefore(this.factory.lists[this.factory.lists.length - 4].$obj);
+
+        this._clearExcessDigits();
+
+        if(this.autoStart) {
+            this.start();
+        }
+    },
+
+    /**
+     * Flip the clock face
+     */
+
+    flip: function(time) {
+        time = time ? time : this.factory.time.getMilitaryTime();
+        this.base(time);    
+    },
+
+    /**
+     * Clear the excess digits from the tens columns for sec/min
+     */
+
+    _clearExcessDigits: function() {
+        var tenSeconds = this.factory.lists[this.factory.lists.length - 2];
+        var tenMinutes = this.factory.lists[this.factory.lists.length - 4];
+
+        for(var x = 6; x &lt; 10; x++) {
+            tenSeconds.$obj.find('li:last-child').remove();
+            tenMinutes.$obj.find('li:last-child').remove();
+        }
+    }
+
+});
+</code></pre>
+
+<p>}(jQuery));
+(function($) {</p>
+
+<pre><code>/**
+ * Counter Clock Face
+ *
+ * This class will generate a generice flip counter. The timer has been
+ * disabled. clock.increment() and clock.decrement() have been added.
+ *
+ * @param  object  The parent FlipClock.Factory object
+ * @param  object  An object of properties to override the default  
+ */
+
+FlipClock.CounterFace = FlipClock.Face.extend({
+
+    autoStart: false,
+
+    /**
+     * Constructor
+     *
+     * @param  object  The parent FlipClock.Factory object
+     * @param  object  An object of properties to override the default  
+     */
+
+    constructor: function(factory, options) {
+        factory.timer.interval = 0;
+        factory.autoStart      = false;
+        factory.running        = true;
+
+        factory.increment = function() {
+            factory.countdown = false;
+            factory.setTime(factory.getTime().time + 1);
+        };
+
+        factory.decrement = function() {
+            factory.countdown = true;
+            factory.setTime(factory.getTime().time - 1);
+        };
+
+        factory.setValue = function(digits) {
+            factory.setTime(digits);
+        };
+
+        factory.setCounter = function(digits) {
+            factory.setTime(digits);
+        };
+
+        this.base(factory, options);
+    },
+
+    /**
+     * Build the clock face 
+     */
+
+    build: function() {
+        var t        = this;
+        var children = this.factory.$wrapper.find('ul');
+        var lists    = [];
+        var time     = this.factory.getTime().digitize([this.factory.getTime().time]);
+
+        if(time.length &gt; children.length) {
+            $.each(time, function(i, digit) {
+                var list = t.createList(digit);
+
+                list.select(digit);
+                lists.push(list);
+            });
+
+        }
+
+        $.each(lists, function(i, list) {
+            list.play();
+        });
+
+        this.factory.lists = lists;
+    },
+
+    /**
+     * Flip the clock face
+     */
+
+    flip: function(doNotAddPlayClass) {
+        var time = this.factory.getTime().digitize([this.factory.getTime().time]);
+
+        this.base(time, doNotAddPlayClass);
+    },
+
+});
+</code></pre>
+
+<p>}(jQuery));
+(function($) {</p>
+
+<pre><code>/**
+ * Daily Counter Clock Face
+ *
+ * This class will generate a daily counter for FlipClock.js. A
+ * daily counter will track days, hours, minutes, and seconds. If
+ * the number of available digits is exceeded in the count, a new
+ * digit will be created.
+ *
+ * @param  object  The parent FlipClock.Factory object
+ * @param  object  An object of properties to override the default
+ */
+
+FlipClock.DailyCounterFace = FlipClock.Face.extend({
+
+    showSeconds: true,
+
+    /**
+     * Constructor
+     *
+     * @param  object  The parent FlipClock.Factory object
+     * @param  object  An object of properties to override the default
+     */
+
+    constructor: function(factory, options) {
+        this.base(factory, options);
+    },
+
+    /**
+     * Build the clock face
+     */
+
+    build: function(excludeHours, time) {
+        var t        = this;
+        var children = this.factory.$wrapper.find('ul');
+        var lists    = [];
+        var offset   = 0;
+
+        time     = time ? time : this.factory.time.getDayCounter(this.showSeconds);
+
+        if(time.length &gt; children.length) {
+            $.each(time, function(i, digit) {
+                lists.push(t.createList(digit));
+            });
+        }
+
+        this.factory.lists = lists;
+
+        if(this.showSeconds) {
+            $(this.createDivider('Seconds')).insertBefore(this.factory.lists[this.factory.lists.length - 2].$obj);
+        }
+        else
+        {
+            offset = 2;
+        }
+
+        $(this.createDivider('Minutes')).insertBefore(this.factory.lists[this.factory.lists.length - 4 + offset].$obj);
+        $(this.createDivider('Hours')).insertBefore(this.factory.lists[this.factory.lists.length - 6 + offset].$obj);
+        $(this.createDivider('Days', true)).insertBefore(this.factory.lists[0].$obj);
+
+        this._clearExcessDigits();
+
+        if(this.autoStart) {
+            this.start();
+        }
+    },
+
+    /**
+     * Flip the clock face
+     */
+
+    flip: function(doNotAddPlayClass, time) {
+        if(!time) {
+            time = this.factory.time.getDayCounter(this.showSeconds);
+        }
+        this.base(time, doNotAddPlayClass);
+    },
+
+    /**
+     * Clear the excess digits from the tens columns for sec/min
+     */
+
+    _clearExcessDigits: function() {
+        var tenSeconds = this.factory.lists[this.factory.lists.length - 2];
+        var tenMinutes = this.factory.lists[this.factory.lists.length - 4];
+
+        for(var x = 6; x &lt; 10; x++) {
+            tenSeconds.$obj.find('li:last-child').remove();
+            tenMinutes.$obj.find('li:last-child').remove();
+        }
+    }
+
+});
+</code></pre>
+
+<p>}(jQuery));
+(function($) {</p>
+
+<pre><code>/**
+ * Hourly Counter Clock Face
+ *
+ * This class will generate an hourly counter for FlipClock.js. An
+ * hour counter will track hours, minutes, and seconds. If number of
+ * available digits is exceeded in the count, a new digit will be 
+ * created.
+ *
+ * @param  object  The parent FlipClock.Factory object
+ * @param  object  An object of properties to override the default  
+ */
+
+FlipClock.HourlyCounterFace = FlipClock.Face.extend({
+
+    clearExcessDigits: true,
+
+    /**
+     * Constructor
+     *
+     * @param  object  The parent FlipClock.Factory object
+     * @param  object  An object of properties to override the default  
+     */
+
+    constructor: function(factory, options) {
+        this.base(factory, options);
+    },
+
+    /**
+     * Build the clock face
+     */
+
+    build: function(excludeHours, time) {
+        var t        = this;
+        var children = this.factory.$wrapper.find('ul');
+        var lists = [];
+
+        time     = time ? time : this.factory.time.getHourCounter();
+
+        if(time.length &gt; children.length) {
+            $.each(time, function(i, digit) {
+                lists.push(t.createList(digit));
+            });
+        }
+
+        this.factory.lists = lists; 
+
+        $(this.createDivider('Seconds')).insertBefore(this.factory.lists[this.factory.lists.length - 2].$obj);
+        $(this.createDivider('Minutes')).insertBefore(this.factory.lists[this.factory.lists.length - 4].$obj);
+
+        if(!excludeHours) {
+            $(this.createDivider('Hours', true)).insertBefore(this.factory.lists[0].$obj);
+        }
+
+        if(this.clearExcessDigits) {
+            this._clearExcessDigits();
+        }
+
+        if(this.autoStart) {
+            this.start();
+        }
+    },
+
+    /**
+     * Flip the clock face
+     */
+
+    flip: function(doNotAddPlayClass, time) {
+        if(!time) {
+            time = this.factory.time.getHourCounter();
+        }           
+        this.base(time, doNotAddPlayClass);
+    },
+
+    /**
+     * Clear the excess digits from the tens columns for sec/min
+     */
+
+    _clearExcessDigits: function() {
+        var tenSeconds = this.factory.lists[this.factory.lists.length - 2];
+        var tenMinutes = this.factory.lists[this.factory.lists.length - 4];
+
+        for(var x = 6; x &lt; 10; x++) {
+            tenSeconds.$obj.find('li:last-child').remove();
+            tenMinutes.$obj.find('li:last-child').remove();
+        }
+    }
+
+});
+</code></pre>
+
+<p>}(jQuery));
+(function($) {</p>
+
+<pre><code>/**
+ * Minute Counter Clock Face
+ *
+ * This class will generate a minute counter for FlipClock.js. A
+ * minute counter will track minutes and seconds. If an hour is 
+ * reached, the counter will reset back to 0. (4 digits max)
+ *
+ * @param  object  The parent FlipClock.Factory object
+ * @param  object  An object of properties to override the default  
+ */
+
+FlipClock.MinuteCounterFace = FlipClock.HourlyCounterFace.extend({
+
+    clearExcessDigits: false,
+
+    /**
+     * Constructor
+     *
+     * @param  object  The parent FlipClock.Factory object
+     * @param  object  An object of properties to override the default  
+     */
+
+    constructor: function(factory, options) {
+        this.base(factory, options);
+    },
+
+    /**
+     * Build the clock face 
+     */
+
+    build: function() {
+        this.base(true, this.factory.time.getMinuteCounter());
+    },
+
+    /**
+     * Flip the clock face
+     */
+
+    flip: function(doNotAddPlayClass) {
+        this.base(doNotAddPlayClass, this.factory.time.getMinuteCounter());
+    },
+
+});
+</code></pre>
+
+<p>}(jQuery));
+(function($) {</p>
+
+<pre><code>/**
+ * Twelve Hour Clock Face
+ *
+ * This class will generate a twelve hour clock for FlipClock.js
+ *
+ * @param  object  The parent FlipClock.Factory object
+ * @param  object  An object of properties to override the default  
+ */
+
+FlipClock.TwelveHourClockFace = FlipClock.TwentyFourHourClockFace.extend({
+
+    /**
+     * The meridium jQuery DOM object
+     */
+
+    meridium: false,
+
+    /**
+     * The meridium text as string for easy access
+     */
+
+    meridiumText: 'AM',
+
+    /**
+     * Build the clock face
+     *
+     * @param  object  Pass the time that should be used to display on the clock.   
+     */
+
+    build: function(time) {
+        var t        = this;
+
+        time = time ? time : (this.factory.time.time ? this.factory.time.time : this.factory.time.getTime());
+
+        this.base(time);            
+        this.meridiumText = this._isPM() ? 'PM' : 'AM';         
+        this.meridium = $([
+            '&lt;ul class="flip-clock-meridium"&gt;',
+                '&lt;li&gt;',
+                    '&lt;a href="#"&gt;'+this.meridiumText+'&lt;/a&gt;',
+                '&lt;/li&gt;',
+            '&lt;/ul&gt;'
+        ].join(''));
+
+        this.meridium.insertAfter(this.factory.lists[this.factory.lists.length-1].$obj);
+    },
+
+    /**
+     * Flip the clock face
+     */
+
+    flip: function() {          
+        if(this.meridiumText != this._getMeridium()) {
+            this.meridiumText = this._getMeridium();
+            this.meridium.find('a').html(this.meridiumText);    
+        }
+        this.base(this.factory.time.getTime()); 
+    },
+
+    /**
+     * Get the current meridium
+     *
+     * @return  string  Returns the meridium (AM|PM)
+     */
+
+    _getMeridium: function() {
+        return new Date().getHours() &gt;= 12 ? 'PM' : 'AM';
+    },
+
+    /**
+     * Is it currently in the post-medirium?
+     *
+     * @return  bool  Returns true or false
+     */
+
+    _isPM: function() {
+        return this._getMeridium() == 'PM' ? true : false;
+    },
+
+    /**
+     * Clear the excess digits from the tens columns for sec/min
+     */
+
+    _clearExcessDigits: function() {
+        var tenSeconds = this.factory.lists[this.factory.lists.length - 2];
+        var tenMinutes = this.factory.lists[this.factory.lists.length - 4];
+
+        for(var x = 6; x &lt; 10; x++) {
+            tenSeconds.$obj.find('li:last-child').remove();
+            tenMinutes.$obj.find('li:last-child').remove();
+        }
+    }
+
+});
+</code></pre>
+
+<p>}(jQuery));
+(function($) {</p>
+
+<pre><code>/**
+ * FlipClock German Language Pack
+ *
+ * This class will used to translate tokens into the German language.
+ *  
+ */
+
+FlipClock.Lang.German = {
+
+    'years'   : 'Jahre',
+    'months'  : 'Monate',
+    'days'    : 'Tage',
+    'hours'   : 'Stunden',
+    'minutes' : 'Minuten',
+    'seconds' : 'Sekunden'  
+
+};
+
+/* Create various aliases for convenience */
+
+FlipClock.Lang['de']     = FlipClock.Lang.German;
+FlipClock.Lang['de-de']  = FlipClock.Lang.German;
+FlipClock.Lang['german'] = FlipClock.Lang.German;
+</code></pre>
+
+<p>}(jQuery));
+(function($) {</p>
+
+<pre><code>/**
+ * FlipClock English Language Pack
+ *
+ * This class will used to translate tokens into the English language.
+ *  
+ */
+
+FlipClock.Lang.English = {
+
+    'years'   : 'Years',
+    'months'  : 'Months',
+    'days'    : 'Days',
+    'hours'   : 'Hours',
+    'minutes' : 'Minutes',
+    'seconds' : 'Seconds'   
+
+};
+
+/* Create various aliases for convenience */
+
+FlipClock.Lang['en']      = FlipClock.Lang.English;
+FlipClock.Lang['en-us']   = FlipClock.Lang.English;
+FlipClock.Lang['english'] = FlipClock.Lang.English;
+</code></pre>
+
+<p>}(jQuery));
+(function($) {</p>
+
+<pre><code>/**
+ * FlipClock Spanish Language Pack
+ *
+ * This class will used to translate tokens into the Spanish language.
+ *  
+ */
+
+FlipClock.Lang.Spanish = {
+
+    'years'   : 'A&amp;#241;os',
+    'months'  : 'Meses',
+    'days'    : 'D&amp;#205;as',
+    'hours'   : 'Horas',
+    'minutes' : 'Minutos',
+    'seconds' : 'Segundo'   
+
+};
+
+/* Create various aliases for convenience */
+
+FlipClock.Lang['es']      = FlipClock.Lang.Spanish;
+FlipClock.Lang['es-es']   = FlipClock.Lang.Spanish;
+FlipClock.Lang['spanish'] = FlipClock.Lang.Spanish;
+</code></pre>
+
+<p>}(jQuery));
+(function($) {</p>
+
+<p>/**</p>
+
+<ul>
+<li>FlipClock Canadian French Language Pack
+*</li>
+<li>
+<p>This class will used to translate tokens into the Canadian French language.
+*
+*/</p>
+
+<p>FlipClock.Lang.French = {</p>
+
+<p>'years'   : 'ans',
+  'months'  : 'mois',
+  'days'    : 'jours',
+  'hours'   : 'heures',
+  'minutes' : 'minutes',
+  'seconds' : 'secondes'</p>
+
+<p>};</p>
+
+<p>/* Create various aliases for convenience */</p>
+
+<p>FlipClock.Lang['fr']      = FlipClock.Lang.French;
+FlipClock.Lang['fr-ca']   = FlipClock.Lang.French;
+FlipClock.Lang['french']  = FlipClock.Lang.French;</p>
+</li>
+</ul>
+
+<p>}(jQuery));
+<code>
+</code>Habil</p>
+
+<p>/*!</p>
+
+<ul>
+<li>The Final Countdown for jQuery v2.0.4 (<a href="http://hilios.github.io/jQuery.countdown/">http://hilios.github.io/jQuery.countdown/</a>)</li>
+<li>Copyright (c) 2014 Edson Hilios</li>
+<li>
+<li>Permission is hereby granted, free of charge, to any person obtaining a copy of</li>
+<li>this software and associated documentation files (the "Software"), to deal in</li>
+<li>the Software without restriction, including without limitation the rights to</li>
+<li>use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of</li>
+<li>the Software, and to permit persons to whom the Software is furnished to do so,</li>
+<li>subject to the following conditions:</li>
+<li>
+<li>The above copyright notice and this permission notice shall be included in all</li>
+<li>copies or substantial portions of the Software.</li>
+<li>
+<li>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</li>
+<li>IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS</li>
+<li>FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR</li>
+<li>COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER</li>
+<li>IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN</li>
+<li>CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+<em>/
+!function(a){"use strict";"function"==typeof define&amp;&amp;define.amd?define(["jquery"],a):a(jQuery)}(function(a){"use strict";function b(a){if(a instanceof Date)return a;if(String(a).match(g))return String(a).match(/^[0-9]</em>$/)&amp;&amp;(a=Number(a)),String(a).match(/-/)&amp;&amp;(a=String(a).replace(/-/g,"/")),new Date(a);throw new Error("Couldn't cast <code>"+a+"</code> to a date object.")}function c(a){return function(b){var c=b.match(/%(-|!)?[A-Z]{1}(:[^;]+;)?/gi);if(c)for(var e=0,f=c.length;f&gt;e;++e){var g=c[e].match(/%(-|!)?([a-zA-Z]{1})(:[^;]+;)?/),i=new RegExp(g[0]),j=g[1]||"",k=g[3]||"",l=null;g=g[2],h.hasOwnProperty(g)&amp;&amp;(l=h[g],l=Number(a[l])),null!==l&amp;&amp;("!"===j&amp;&amp;(l=d(k,l)),""===j&amp;&amp;10&gt;l&amp;&amp;(l="0"+l.toString()),b=b.replace(i,l.toString()))}return b=b.replace(/%%/,"%")}}function d(a,b){var c="s",d="";return a&amp;&amp;(a=a.replace(/(:|;|\s)/gi,"").split(/\,/),1===a.length?c=a[0]:(d=a[0],c=a[1])),1===Math.abs(b)?d:c}var e=100,f=[],g=[];g.push(/^[0-9]<em>$/.source),g.push(/([0-9]{1,2}\/){2}[0-9]{4}( [0-9]{1,2}(:[0-9]{2}){2})?/.source),g.push(/[0-9]{4}([\/-][0-9]{1,2}){2}( [0-9]{1,2}(:[0-9]{2}){2})?/.source),g=new RegExp(g.join("|"));var h={Y:"years",m:"months",w:"weeks",d:"days",D:"totalDays",H:"hours",M:"minutes",S:"seconds"},i=function(b,c,d){this.el=b,this.$el=a(b),this.interval=null,this.offset={},this.instanceNumber=f.length,f.push(this),this.$el.data("countdown-instance",this.instanceNumber),d&amp;&amp;(this.$el.on("update.countdown",d),this.$el.on("stoped.countdown",d),this.$el.on("finish.countdown",d)),this.setFinalDate(c),this.start()};a.extend(i.prototype,{start:function(){null!==this.interval&amp;&amp;clearInterval(this.interval);var a=this;this.update(),this.interval=setInterval(function(){a.update.call(a)},e)},stop:function(){clearInterval(this.interval),this.interval=null,this.dispatchEvent("stoped")},pause:function(){this.stop.call(this)},resume:function(){this.start.call(this)},remove:function(){this.stop(),f[this.instanceNumber]=null,delete this.$el.data().countdownInstance},setFinalDate:function(a){this.finalDate=b(a)},update:function(){return 0===this.$el.closest("html").length?void this.remove():(this.totalSecsLeft=this.finalDate.getTime()-(new Date).getTime(),this.totalSecsLeft=Math.ceil(this.totalSecsLeft/1e3),this.totalSecsLeft=this.totalSecsLeft&lt;0?0:this.totalSecsLeft,this.offset={seconds:this.totalSecsLeft%60,minutes:Math.floor(this.totalSecsLeft/60)%60,hours:Math.floor(this.totalSecsLeft/60/60)%24,days:Math.floor(this.totalSecsLeft/60/60/24)%7,totalDays:Math.floor(this.totalSecsLeft/60/60/24),weeks:Math.floor(this.totalSecsLeft/60/60/24/7),months:Math.floor(this.totalSecsLeft/60/60/24/30),years:Math.floor(this.totalSecsLeft/60/60/24/365)},void(0===this.totalSecsLeft?(this.stop(),this.dispatchEvent("finish")):this.dispatchEvent("update")))},dispatchEvent:function(b){var d=a.Event(b+".countdown");d.finalDate=this.finalDate,d.offset=a.extend({},this.offset),d.strftime=c(this.offset),this.$el.trigger(d)}}),a.fn.countdown=function(){var b=Array.prototype.slice.call(arguments,0);return this.each(function(){var c=a(this).data("countdown-instance");if(void 0!==c){var d=f[c],e=b[0];i.prototype.hasOwnProperty(e)?d[e].apply(d,b.slice(1)):null===String(e).match(/^[$A-Z_][0-9A-Z_$]</em>$/i)?(d.setFinalDate.call(d,e),d.start()):a.error("Method %s does not exist on jQuery.countdown".replace(/\%s/gi,e))}else new i(this,b[0],b[1])})}});</li>
+</ul>
+
+<p>// Create a shortcut to access the formatter function (helps with creating a clock)
+(function($){
+    // Map to convert from a directive to offset object property
+    var DIRECTIVE_KEY_MAP = {
+      'Y': 'years',
+      'm': 'months',
+      'w': 'weeks',
+      'd': 'days',
+      'D': 'totalDays',
+      'H': 'hours',
+      'M': 'minutes',
+      'S': 'seconds'
+    };
+    // Returns an escaped regexp from the string
+    function escapedRegExp(str) {
+      var sanitize = str.toString().replace(/([.?*+^$[]\(){}|-])/g, '\$1');
+      return new RegExp(sanitize);
+    }
+    // Time string formatter
+    function strftime(offsetObject) {
+      return function(format) {
+        var directives = format.match(/%(-|!)?[A-Z]{1}(:[^;]+;)?/gi);
+        if(directives) {
+          for(var i = 0, len = directives.length; i &lt; len; ++i) {
+            var directive   = directives[i]
+                .match(/%(-|!)?([a-zA-Z]{1})(:[^;]+;)?/),
+              regexp    = escapedRegExp(directive[0]),
+              modifier  = directive[1] || '',
+              plural    = directive[3] || '',
+              value     = null;
+              // Get the key
+              directive = directive[2];
+            // Swap shot-versions directives
+            if(DIRECTIVE_KEY_MAP.hasOwnProperty(directive)) {
+              value = DIRECTIVE_KEY_MAP[directive];
+              value = Number(offsetObject[value]);
+            }
+            if(value !== null) {
+              // Pluralize
+              if(modifier === '!') {
+                value = pluralize(plural, value);
+              }
+              // Add zero-padding
+              if(modifier === '') {
+                if(value &lt; 10) {
+                  value = '0' + value.toString();
+                }
+              }
+              // Replace the directive
+              format = format.replace(regexp, value.toString());
+            }
+          }
+        }
+        format = format.replace(/%%/, '%');
+        return format;
+      };
+    }
+    // Pluralize
+    function pluralize(format, count) {
+      var plural = 's', singular = '';
+      if(format) {
+        format = format.replace(/(:|;|\s)/gi, '').split(/\,/);
+        if(format.length === 1) {
+          plural = format[0];
+        } else {
+          singular = format[0];
+          plural = format[1];
+        }
+      }
+      if(Math.abs(count) === 1) {
+        return singular;
+      } else {
+        return plural;
+      }
+    }
+    $.fn.countdown_strftime = strftime;
+})(jQuery);`</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/1xsancorp/clock_assets">Clock assets</a> is maintained by <a href="https://github.com/1xsancorp">1xsancorp</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
+    </section>
+
+  
   </body>
 </html>
